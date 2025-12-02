@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso VIP Trampo7</title>
+
+    <style>
+        /* ======== ESTILO GLOBAL ======== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0e0f12;
+            color: #fff;
+            line-height: 1.5;
+            padding-bottom: 60px;
+        }
+
+        :root {
+            --primary: #00aaff;
+            --secondary: #0059ff;
+            --dark: #0b0c10;
+            --card: #14161b;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* ======== HERO ======== */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto 25px auto;
+            display: block;
+            border-radius: 14px;
+            box-shadow: 0 0 22px rgba(0, 170, 255, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero span {
+            color: var(--primary);
+        }
+
+        .sub {
+            margin-top: 12px;
+            font-size: 18px;
+            opacity: .85;
+        }
+
+        .btn {
+            margin-top: 28px;
+            font-size: 20px;
+            padding: 16px 28px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            display: inline-block;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.04);
+        }
+
+        /* ======== SESSÕES ======== */
+        section {
+            margin-top: 60px;
+            padding: 30px 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 22px;
+            box-shadow: 0 0 14px rgba(0,0,0,0.4);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* ======== GRID ======== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            gap: 22px;
+        }
+
+        /* ======== DEPOIMENTOS ======== */
+        blockquote {
+            background: #111318;
+            padding: 20px;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            opacity: .9;
+        }
+
+        /* ======== PREÇO ======== */
+        .preco-box {
+            text-align: center;
+            background: var(--card);
+            padding: 35px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .preco {
+            font-size: 36px;
+            margin-top: 15px;
+            color: var(--primary);
+        }
+
+        /* ======== RESPONSIVO ======== */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <!-- SUA IMAGEM AQUI -->
+            <img src="img/Trampo7.png" alt="Curso VIP Trampo7">
+
+            <h1>Curso VIP <span>Trampo7</span></h1>
+            <p class="sub">O treinamento completo com mais de <strong>300 métodos reais</strong> para faturar online — mesmo começando do zero.</p>
+
+            <a href="https://pay.sunize.com.br/cstEdUUA" class="btn">QUERO ENTRAR AGORA 🔥</a>
+
+        </section>
+
+        <!-- O QUE É O CURSO -->
+        <section>
+            <h2 class="title">O que você vai receber</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <h3>300+ Estratégias Prontas</h3>
+                    <p>Métodos atualizados e organizados passo a passo.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Atualizações Semanais</h3>
+                    <p>Sempre entrando novos esquemas para você aplicar.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Passo a Passo Simples</h3>
+                    <p>Conteúdo direto ao ponto, ideal para iniciantes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Comunidade VIP</h3>
+                    <p>Tire dúvidas, aprenda junto e acompanhe novidades.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section>
+            <h2 class="title">Depoimentos Reais</h2>
+
+            <blockquote>“Consegui minha primeira venda em 2 dias aplicando o módulo 1.” — Marcos S.</blockquote>
+            <blockquote>“Conteúdo direto ao ponto. Já consegui renda extra.” — Letícia R.</blockquote>
+            <blockquote>“Já comprei 3 cursos antes e nenhum chega perto desse.” — Felipe M.</blockquote>
+        </section>
+
+        <!-- PREÇO -->
+        <section>
+            <h2 class="title">Acesso Completo</h2>
+
+            <div class="preco-box">
+                <p>De <s>R$ 297,00</s></p>
+                <p class="preco">Por apenas R$ 32,90</p>
+                <p>Acesso vitalício + bônus exclusivos</p>
+
+                <a href="https://pay.sunize.com.br/cstEdUUA" class="btn">GARANTIR MINHA VAGA</a>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
