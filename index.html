@@ -1,226 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso VIP Trampo7</title>
-
-    <style>
-        /* ======== ESTILO GLOBAL ======== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
-
-        body {
-            background: #0e0f12;
-            color: #fff;
-            line-height: 1.5;
-            padding-bottom: 60px;
-        }
-
-        :root {
-            --primary: #00aaff;
-            --secondary: #0059ff;
-            --dark: #0b0c10;
-            --card: #14161b;
-        }
-
-        h1, h2, h3 {
-            font-weight: 700;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        /* ======== HERO ======== */
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .hero img {
-            width: 100%;
-            max-width: 520px;
-            margin: 0 auto 25px auto;
-            display: block;
-            border-radius: 14px;
-            box-shadow: 0 0 22px rgba(0, 170, 255, 0.25);
-        }
-
-        .hero h1 {
-            font-size: 42px;
-        }
-
-        .hero span {
-            color: var(--primary);
-        }
-
-        .sub {
-            margin-top: 12px;
-            font-size: 18px;
-            opacity: .85;
-        }
-
-        .btn {
-            margin-top: 28px;
-            font-size: 20px;
-            padding: 16px 28px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            color: #fff;
-            font-weight: 600;
-            display: inline-block;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: scale(1.04);
-        }
-
-        /* ======== SESSÕES ======== */
-        section {
-            margin-top: 60px;
-            padding: 30px 0;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .card {
-            background: var(--card);
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 22px;
-            box-shadow: 0 0 14px rgba(0,0,0,0.4);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-
-        /* ======== GRID ======== */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-            gap: 22px;
-        }
-
-        /* ======== DEPOIMENTOS ======== */
-        blockquote {
-            background: #111318;
-            padding: 20px;
-            border-left: 4px solid var(--primary);
-            border-radius: 8px;
-            margin-bottom: 25px;
-            opacity: .9;
-        }
-
-        /* ======== PREÇO ======== */
-        .preco-box {
-            text-align: center;
-            background: var(--card);
-            padding: 35px;
-            border-radius: 12px;
-            margin-top: 30px;
-        }
-
-        .preco {
-            font-size: 36px;
-            margin-top: 15px;
-            color: var(--primary);
-        }
-
-        /* ======== RESPONSIVO ======== */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 34px;
-            }
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VT STORE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-    <div class="container">
-
-        <!-- HERO -->
-        <section class="hero">
-
-            <!-- SUA IMAGEM AQUI -->
-            <img src="img/Trampo7.png" alt="Curso VIP Trampo7">
-
-            <h1>Curso VIP <span>Trampo7</span></h1>
-            <p class="sub">O treinamento completo com mais de <strong>300 métodos reais</strong> para faturar online — mesmo começando do zero.</p>
-
-            <a href="https://pay.sunize.com.br/cstEdUUA" class="btn">QUERO ENTRAR AGORA 🔥</a>
-
-        </section>
-
-        <!-- O QUE É O CURSO -->
-        <section>
-            <h2 class="title">O que você vai receber</h2>
-
-            <div class="grid">
-
-                <div class="card">
-                    <h3>300+ Estratégias Prontas</h3>
-                    <p>Métodos atualizados e organizados passo a passo.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Atualizações Semanais</h3>
-                    <p>Sempre entrando novos esquemas para você aplicar.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Passo a Passo Simples</h3>
-                    <p>Conteúdo direto ao ponto, ideal para iniciantes.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Comunidade VIP</h3>
-                    <p>Tire dúvidas, aprenda junto e acompanhe novidades.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- DEPOIMENTOS -->
-        <section>
-            <h2 class="title">Depoimentos Reais</h2>
-
-            <blockquote>“Consegui minha primeira venda em 2 dias aplicando o módulo 1.” — Marcos S.</blockquote>
-            <blockquote>“Conteúdo direto ao ponto. Já consegui renda extra.” — Letícia R.</blockquote>
-            <blockquote>“Já comprei 3 cursos antes e nenhum chega perto desse.” — Felipe M.</blockquote>
-        </section>
-
-        <!-- PREÇO -->
-        <section>
-            <h2 class="title">Acesso Completo</h2>
-
-            <div class="preco-box">
-                <p>De <s>R$ 297,00</s></p>
-                <p class="preco">Por apenas R$ 32,90</p>
-                <p>Acesso vitalício + bônus exclusivos</p>
-
-                <a href="https://pay.sunize.com.br/cstEdUUA" class="btn">GARANTIR MINHA VAGA</a>
-            </div>
-        </section>
-
+  <header class="topbar">
+    <div class="container topbar-content">
+      <h1 class="brand">VT STORE</h1>
+      <nav class="nav-actions">
+        <button id="goStoreBtn" class="btn btn-ghost" type="button">Loja</button>
+        <button id="goAuthBtn" class="btn btn-ghost" type="button">Entrar</button>
+        <button id="goAdminBtn" class="btn btn-primary" type="button">Admin</button>
+      </nav>
     </div>
+  </header>
 
+  <main class="container">
+    <section id="storeView" class="view active">
+      <div class="hero">
+        <h2>Produtos em destaque da VT STORE</h2>
+        <p>Escolha entre nossos produtos ativos e finalize no checkout externo.</p>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="authView" class="view">
+      <div class="grid-2">
+        <article class="card">
+          <h2>Login do cliente</h2>
+          <form id="customerLoginForm" class="stacked-form">
+            <label>Email<input type="email" id="customerLoginEmail" required /></label>
+            <label>Senha<input type="password" id="customerLoginPass" required /></label>
+            <button class="btn btn-primary" type="submit">Entrar</button>
+            <p id="customerLoginFeedback" class="feedback"></p>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>Cadastro do cliente</h2>
+          <form id="customerRegisterForm" class="stacked-form">
+            <label>Nome<input type="text" id="customerRegisterName" required /></label>
+            <label>Email<input type="email" id="customerRegisterEmail" required /></label>
+            <label>Senha<input type="password" id="customerRegisterPass" required /></label>
+            <button class="btn btn-primary" type="submit">Criar conta</button>
+            <p id="customerRegisterFeedback" class="feedback"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section id="detailView" class="view">
+      <button id="backToStoreBtn" class="btn btn-ghost" type="button">← Voltar para loja</button>
+      <div id="detailContent"></div>
+    </section>
+
+    <section id="checkoutView" class="view">
+      <button id="backFromCheckoutBtn" class="btn btn-ghost" type="button">← Voltar</button>
+      <div id="checkoutContent"></div>
+    </section>
+
+    <section id="thanksView" class="view">
+      <div class="card thanks-card">
+        <h2>Obrigado pela compra! 🎉</h2>
+        <p>Pedido salvo para o usuário logado. Finalize o pagamento na aba externa.</p>
+        <button id="thanksBackStore" class="btn btn-primary" type="button">Voltar para a loja</button>
+      </div>
+    </section>
+
+    <section id="adminLoginView" class="view">
+      <div class="card auth-card">
+        <h2>Painel Administrativo</h2>
+        <p>Faça login para gerenciar produtos e estatísticas.</p>
+        <form id="adminLoginForm" class="stacked-form">
+          <label>Usuário<input type="text" id="adminUser" required placeholder="admin" /></label>
+          <label>Senha<input type="password" id="adminPass" required placeholder="Digite sua senha" /></label>
+          <button class="btn btn-primary" type="submit">Entrar</button>
+          <p id="loginFeedback" class="feedback"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="adminPanelView" class="view">
+      <div class="admin-header">
+        <h2>Painel VT STORE</h2>
+        <button id="adminLogoutBtn" class="btn btn-danger" type="button">Sair</button>
+      </div>
+
+      <article class="card">
+        <h3>Estatísticas gerais</h3>
+        <div id="statsCards" class="stats-grid"></div>
+      </article>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3 id="formTitle">Cadastrar novo produto</h3>
+          <form id="productForm" class="stacked-form">
+            <input type="hidden" id="productId" />
+            <label>Nome do produto<input type="text" id="productName" required /></label>
+            <label>Descrição<textarea id="productDescription" rows="3" required></textarea></label>
+            <label>Preço (R$)<input type="number" id="productPrice" min="0" step="0.01" required /></label>
+            <label>URL da imagem<input type="url" id="productImage" placeholder="https://..." /></label>
+            <label>ou upload da imagem<input type="file" id="productImageFile" accept="image/*" /></label>
+            <label>Status
+              <select id="productStatus">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+              </select>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Salvar produto</button>
+              <button class="btn btn-ghost" type="button" id="cancelEditBtn">Cancelar edição</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="card">
+          <h3>Pagamento externo da VT STORE</h3>
+          <p>Todos os botões de compra usam apenas este link:</p>
+          <p><strong id="fixedPaymentLink"></strong></p>
+        </article>
+      </div>
+
+      <article class="card">
+        <h3>Produtos cadastrados</h3>
+        <div id="adminProductList" class="table-wrap"></div>
+      </article>
+
+      <article class="card">
+        <h3>Compras realizadas</h3>
+        <div id="ordersList"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>

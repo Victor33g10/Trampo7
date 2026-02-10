@@ -1,0 +1,100 @@
+:root {
+  --bg: #f5f7fb;
+  --text: #1e2430;
+  --muted: #5d687b;
+  --card: #ffffff;
+  --line: #e4e9f2;
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --danger: #dc2626;
+  --success: #16a34a;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+.fade-in { animation: fadeInUp 0.45s ease both; }
+.container { width: min(1120px, 92%); margin: 0 auto; }
+.topbar { background: #0f172a; color: #fff; position: sticky; top: 0; z-index: 10; box-shadow: var(--shadow); }
+.topbar-content { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { font-size: 1.45rem; }
+.nav-actions { display: flex; gap: 0.75rem; }
+main { padding: 1.8rem 0 2.5rem; }
+.view { display: none; }
+.view.active { display: block; }
+.hero { margin-bottom: 1.2rem; }
+.hero h2 { font-size: 2rem; margin-bottom: 0.4rem; }
+.hero p { color: var(--muted); }
+.product-grid { margin-top: 1.2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem; box-shadow: var(--shadow); }
+.product-card img, .detail-layout img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; background: #eef1f8; }
+.product-card h3 { margin-top: 0.8rem; font-size: 1rem; }
+.price { margin: 0.5rem 0; font-weight: 800; color: var(--primary-dark); }
+.desc { color: var(--muted); font-size: 0.92rem; margin-bottom: 0.8rem; }
+.btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.62rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover { transform: translateY(-2px) scale(1.01); box-shadow: 0 10px 16px rgba(15, 23, 42, 0.12); }
+.btn:active { transform: translateY(0) scale(0.98); filter: brightness(0.98); }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-dark); }
+.btn-ghost { background: #e8edf8; color: #334155; }
+.btn-danger { background: #fee2e2; color: #991b1b; }
+.empty { text-align: center; color: var(--muted); margin: 1.2rem 0; }
+.detail-layout, .checkout-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-top: 1rem; }
+.stacked-form { display: grid; gap: 0.8rem; }
+input, textarea, select { width: 100%; margin-top: 0.3rem; border: 1px solid #d6deeb; border-radius: 10px; padding: 0.65rem 0.75rem; font: inherit; }
+.feedback, .helper-text { font-size: 0.9rem; color: var(--muted); }
+.form-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem; }
+.stat-card { border: 1px solid var(--line); border-radius: 12px; padding: 1rem; background: #f8faff; }
+.stat-card h4 { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.3rem; }
+.stat-card p { font-size: 1.25rem; font-weight: 800; color: var(--primary-dark); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 0.65rem 0.4rem; font-size: 0.92rem; }
+.tag { font-size: 0.78rem; padding: 0.15rem 0.5rem; border-radius: 999px; font-weight: 700; }
+.tag.active { color: #166534; background: #dcfce7; }
+.tag.inactive { color: #9a3412; background: #ffedd5; }
+.order-item { border: 1px solid var(--line); padding: 0.8rem; border-radius: 10px; margin-bottom: 0.7rem; }
+.thanks-card { text-align: center; padding: 2rem; }
+
+.btn .ripple {
+  position: absolute;
+  border-radius: 999px;
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.45);
+  animation: ripple 0.55s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 800px) {
+  .detail-layout, .checkout-layout, .grid-2, .stats-grid { grid-template-columns: 1fr; }
+  .topbar-content { min-height: 62px; flex-wrap: wrap; padding: 0.6rem 0; }
+  .hero h2 { font-size: 1.6rem; }
+}
